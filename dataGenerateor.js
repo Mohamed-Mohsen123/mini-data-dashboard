@@ -2,8 +2,7 @@ import { formatData } from "./dataFormat.js";
 
 export function* generator() {
   if (!formatData) {
-    yield "no data";
-    return;
+    return "no data";
   }
 
   for (const user of formatData) {
